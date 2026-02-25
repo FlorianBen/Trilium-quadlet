@@ -5,12 +5,12 @@ The Trilium instance is running within a Pod.
 
 ## How to use
 
-Before starting, take time to read carefully the [Trilium Documentation](https://docs.firefly-iii.org/how-to/firefly-iii/installation/docker/)
+Before starting, take time to read carefully the [Trilium Documentation](https://docs.triliumnotes.org/user-guide/setup/server)
 
 By default not secret is needed by this Pod.
 
-Then, check quadlet file in the quadlet folder. Check that port, volume and environment are compatible with the current setup. From this folder copy all quadlet file to `~/.config/containers/systemd/`.
-One can use the `../install_quadlet` script to perform these actions. If the script is run by `sudo` it will install as rootfull containers.
+Then, check quadlet files in the quadlet folder. Check that port, volumes and environments are compatible with the current setup. From this folder copy all quadlet files to `~/.config/containers/systemd/`.
+One can use the `../install_quadlet` script to perform these actions. If the script is run by `sudo` it will install them as rootfull services/containers.
 
 Finally run the systemd command to start the Pod `systemctl --user start trilium-pod` and check that Trilium application is running `systemctl --user status trilium`.
 
