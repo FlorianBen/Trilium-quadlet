@@ -1,0 +1,13 @@
+[Unit]
+Description=Trilium instance
+
+[Container]
+ContainerName=trilium
+Image=docker.io/triliumnext/trilium:latest
+Volume=trilium-data.volume:/home/node/trilium-data
+Volume=trilium-timezone.volume:/etc/timezone:ro
+Volume=trilium-localtime.volume:/etc/localtime:ro
+Pod=trilium.pod
+
+[Install]
+WantedBy=default.target

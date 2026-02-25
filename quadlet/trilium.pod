@@ -1,0 +1,6 @@
+[Unit]
+Description=Trilium Pod
+
+[Pod]
+PodName=trilium
+PublishPort=8080:8080
